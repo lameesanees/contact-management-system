@@ -1,0 +1,73 @@
+CONTACT MANAGEMENT SYSTEM
+============================================================================
+        FRONTEND STEPS
+================================================================
+1. Create a new project
+npx create-vite@latest ems-frontend
+2. cd ems-frontend
+3. npm install
+4. code .
+5. run - npm run dev
+6. clear the unwanted code
+7. install the 3rd party libraries
+
+MDB Bootstrap - npm i mdb-react-ui-kit
+Font awesome - npm i @fortawesome/fontawesome-free
+                CSS import
+                add the following in your main.js file before app.js file 
+import main.js
+         import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+         import "@fortawesome/fontawesome-free/css/all.min.css";
+react Bootstrap
+        npm install react-bootstrap bootstrap
+google font
+        @import to index.css
+        paste font-family it to index.css
+bootswatch
+        import './bootstrap.min.css' to main.jsx
+
+COMPONENT CREATION
+1. Admin.jsx
+2. Add.jsx
+3. Edit.jsx
+4. View.jsx
+5. PageNotFound.jsx
+6. Header.jsx
+7. Footer.jsx
+
+PATH CREATION
+        npm i react-router-dom
+In main.jsx file
+ import { BrowserRouter } from 'react-router-dom';
+ <BrowserRouter>
+    <App />
+    </BrowserRouter>
+browser router - it is used to setup app routing -main.jsx
+routes - to hold more than one route -app.jsx
+route - to set up component path -app.jsx
+
+In app.jsx
+    import all the component and create a route
+
+    BACKEND CREATION
+===============================================================
+Express
+        Express is a minimal and flexible Node.js web application framework that provides a robust set of features
+         for web and mobile applications.
+CORS - Cross-Origin Resource Sharing -
+            https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+            https://www.npmjs.com/package/cors
+            Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. 
+            The CORS mechanism supports secure cross-origin requests and data transfers between browsers and servers.
+
+1. create a folder for backend (ems-backend)
+2. create package.json file- npm init -y
+3. install express and cors -npm i express cors
+4. Create service folder to handle backend logic
+                -> db.js - Connecting to the database 
+                    -mongoose  (for connect node and mongodb)
+                        -Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. Mongoose supports Node.js and Deno (alpha).
+                        -npm i mongoose
+                -> logic.js
+                   Implementing all the functionality of the service
+   
